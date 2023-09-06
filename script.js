@@ -1,6 +1,7 @@
 // Access the DOM elements
 const form = document.getElementById('myForm');
 const submitBtn = document.getElementById('submitBtn');
+const reset = document.getElementById('reset');
 
 // Add event listener to the submit button
 submitBtn.addEventListener('click', () => {
@@ -65,3 +66,8 @@ submitBtn.addEventListener('click', () => {
         myCloud.appendChild(wordElement);
     });
 });
+
+// Add functionality to the reset button
+reset.addEventListener("click", () => {
+    document.location.reload();
+  });
